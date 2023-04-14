@@ -2,7 +2,11 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>header</div>
+       <header>
+        <div className="header-logo">
+            <h1>@kevinllo</h1>
+        </div>
+       </header>
     );
 }
 
