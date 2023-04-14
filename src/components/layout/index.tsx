@@ -6,13 +6,13 @@ interface LayoutProps {
 }
 function Layout({ children }: LayoutProps) {
     return (
-        <>
+        <div className='bg-slate-100 dark:bg-primary dark:text-primary h-screen flex flex-col'>
             <Header />
-            <main>
+            <main className='flex-1'>
                 {children}
             </main>
             <Footer />
-        </>
+        </div>
     )
 }
 
