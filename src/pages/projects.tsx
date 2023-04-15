@@ -1,8 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 function Projects() {
     return (
-        <div>Projects</div>
+        <Layout>
+            <div>Projects</div>
+        </Layout>
     );
 }
 
