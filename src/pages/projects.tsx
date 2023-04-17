@@ -2,28 +2,8 @@ import React from 'react';
 import Layout from '../components/layouts';
 import { HeadFC, graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
-interface IProjectImage {
-    childImageSharp: {
-        gatsbyImageData: any
-    }
-}
+import IProjects from '../interfaces/IProjects';
 
-interface IProjectNode {
-    id: string
-    tags: string[]
-    title: string
-    slug: string
-    description: string
-    image: IProjectImage | null
-}
-
-interface IProjects {
-    allProjectsJson: {
-        edges: {
-            node: IProjectNode
-        }[]
-    }
-}
 function Projects() {
     const data: IProjects = useStaticQuery(graphql`
     query ProjectsQuey {
