@@ -35,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
+    
       <section className="bg-gray-100 dark:bg-slate-700 py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-semibold text-gray-700 dark:text-accent ">Work Experience</h2>
@@ -44,7 +45,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <li>
                   <div className="relative pb-8">
                     <div className="relative flex items-start space-x-3">
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-2">
                         <div>
                           <h3 className="text-xl font-medium leading-6"
                             style={{
@@ -69,7 +70,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <li>
                   <div className="relative pb-8">
                     <div className="relative flex items-start space-x-3">
-                      <div className="min-w-0 flex-1">
+                      <div className="min-w-0 flex-1 grid grid-cols-1 sm:grid-cols-2">
                         <div>
                           <h3 className="text-xl font-medium leading-6" style={{
                             borderLeft: "5px solid #1F817E",
@@ -94,7 +95,33 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
-
+      <section className="bg-gray-100 dark:bg-slate-700 py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-semibold text-gray-700 dark:text-accent ">Education</h2>
+          <div className="mt-8">
+            <div className="flow-root">
+              <div className="-mb-8">
+                <div>
+                  <div className="relative pb-8">
+                    <div className="relative flex items-start space-x-3">
+                      <div className="min-w-0 flex-1">
+                        <div>
+                          <h3 className="text-xl font-medium leading-6" style={{
+                            borderLeft: "5px solid #1F817E",
+                            paddingLeft: "5px"
+                          }}>Systems Engineering</h3>
+                          <p className="mt-1 text-md">Universidad de El Salvador</p>
+                          <p className="mt-1 text-sm">Jan 2020 - Present</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
