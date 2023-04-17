@@ -4,7 +4,7 @@ import Layout from '../components/layouts';
 function About() {
   return (
     <Layout>
-      <section className="py-20 bg-white dark:bg-slate-700 flex items-center justify-center h-[calc(100vh-153px)]">
+      <section className="py-20 flex items-center justify-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold">About Me</h2>
           <div className="mt-6 text-lg">
