@@ -1,6 +1,6 @@
-const path = require('path');
-import IProjects from './src/interfaces/IProjectNode';
+import IProject from "./src/interfaces/IProject";
 
+const path = require('path');
 
 exports.createPages = async ({ graphql, actions }: any) => {
     const { createPage } = actions;
@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }: any) => {
         }
    }
     `);
-    res.data.allProjectsJson.edges.forEach(({ node }: any) => {
+    res.data.allProjectsJson.edges.forEach(({ node }: IProject) => {
         createPage({
             path: `/projects/${node.slug}`,
             component: detailTemplatePage,

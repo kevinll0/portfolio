@@ -2,6 +2,9 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import IProjects from '../../interfaces/IProjects';
 
+interface ProjectDetailProps {
+    data: IProjects;
+}
 export const query = graphql`
 query($slug: String){
     allProjectsJson(filter: {slug: { eq: $slug } }){
@@ -11,6 +14,7 @@ query($slug: String){
                 title
                 description
                 tags
+                deployedWeb
                 image{
                     childImageSharp{
                         gatsbyImageData
@@ -21,11 +25,15 @@ query($slug: String){
     }
 }
 `
-function ProjectDetail({ data }: any) {
-    const project = data.allProjectsJson.edges[0].node;
-    console.log(project);
+function ProjectDetail({ data }: ProjectDetailProps) {
+    const { id,
+        title,
+        description,
+        tags,
+        deployedWeb,
+        image } = data.allProjectsJson.edges[0].node;
     return (
-        <div>{project?.title}</div>
+        <div>{title}</div>
     )
 }
 

@@ -1,6 +1,6 @@
 interface IProjectImage {
     childImageSharp: {
-        gatsbyImageData: any
+        gatsbyImageData: any;
     }
 }
 
