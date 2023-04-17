@@ -26,11 +26,11 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
           <div className="order-1 md:order-2 mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 sm:w-80 sm:h-80 relative overflow-hidden mt-4 md:h-96 md:w-96">
             <StaticImage
-              src="../images/dev.png"
+              src="../images/profile.jpg"
               objectFit="cover"
               loading="lazy"
               width={400}
-              height={400}
+              height={500}
               alt={"A developer"} />
           </div>
         </div>
