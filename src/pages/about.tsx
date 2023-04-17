@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layouts';
+import { HeadFC } from 'gatsby';
 
 function About() {
   return (
@@ -23,5 +24,5 @@ function About() {
     </Layout>
   );
 }
-
+export const Head: HeadFC = () => <title>About | Kevin Grande</title>
 export default About;
