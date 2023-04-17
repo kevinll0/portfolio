@@ -25,7 +25,6 @@ function Projects() {
         }
     }
     `);
-    console.log(data.allProjectsJson);
     return (
         <Layout>
             <section className="py-12">
