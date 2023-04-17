@@ -9,15 +9,15 @@ function Header() {
         <header className="flex justify-between items-center relative container mx-auto py-3">
             <div className="flex items-center">
                 <div className="header-logo">
-                    <h1 className="text-2xl font-bold">@kevinllo</h1>
+                    <Link to='/' className="text-2xl font-bold">@kevinllo</Link>
                 </div>
             </div>
 
             <nav className="hidden sm:block">
                 <ul className="flex space-x-4 items-center">
-                    <li className='font-semibold'> <Link to="/about">About</Link></li>
-                    <li className='font-semibold'>  <Link to="/projects">Projects</Link></li>
-                    <li className='font-semibold'><Link to="/contact">Contact</Link></li>
+                    <li className='font-semibold'> <Link to="/about" activeClassName='active-link'>About</Link></li>
+                    <li className='font-semibold'>  <Link to="/projects" activeClassName='active-link'>Projects</Link></li>
+                    <li className='font-semibold'><Link to="/contact" activeClassName='active-link'>Contact</Link></li>
                     <li className='font-semibold'> <Toggle /></li>
                 </ul>
             </nav>
@@ -35,9 +35,9 @@ function Header() {
                 : 'mobile-menu hidden sm:hidden'}>
                 <nav className="mt-4">
                     <ul className="grid gap-4">
-                        <li className='text-2xl'> <Link to="/about">About</Link></li>
-                        <li className='text-2xl'>  <Link to="/projects">Projects</Link></li>
-                        <li className='text-2xl'><Link to="/contact">Contact</Link></li>
+                        <li className='text-2xl'> <Link to="/about" activeClassName='active-link'>About</Link></li>
+                        <li className='text-2xl'>  <Link to="/projects" activeClassName='active-link'>Projects</Link></li>
+                        <li className='text-2xl'><Link to="/contact" activeClassName='active-link'>Contact</Link></li>
                         <li className='text-2xl'> <Toggle /></li>
                     </ul>
                 </nav>

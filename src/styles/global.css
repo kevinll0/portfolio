@@ -16,7 +16,12 @@
     --color-text-accent: #2b6cb0;
   }
 
-
+.active-link{
+  background-color: #81e6d9;
+  padding: .2rem .6rem;
+  border-radius: 100px;
+  color: #283141;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
