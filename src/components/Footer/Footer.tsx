@@ -34,7 +34,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="mt-1 text-sm text-center sm:text-start">
-                    <p className="text-accent">Designed and developed by Kevin Grande 🐱‍👤</p>
+                    <p className="dark:text-accent">Designed and developed by Kevin Grande 🐱‍👤</p>
                 </div>
             </div>
         </footer>
