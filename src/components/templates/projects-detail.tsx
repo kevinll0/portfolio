@@ -4,7 +4,6 @@ import React from 'react';
 import IProjects from '../../interfaces/IProjects';
 import Layout from '../../components/layouts';
 import { AiOutlineArrowLeft, AiFillGitlab } from 'react-icons/ai';
-import { SiVercel } from 'react-icons/si';
 import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
 
 interface ProjectDetailProps {
