@@ -5,6 +5,7 @@ import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
 import IProjects from '../interfaces/IProjects';
 import TAGS from '../constants/tags';
 import ProjectGrid from '../components/ProjectGrid';
+import Tags from '../components/Tags';
 
 function Projects() {
     const data: IProjects = useStaticQuery(graphql`
@@ -52,17 +53,14 @@ function Projects() {
                 <div className="container mx-auto px-3">
                     <h2 className="text-3xl font-bold mb-8">Projects</h2>
                     <div className="flex flex-wrap mb-4">
-                        {TAGS.map(tag => (
-                            <label className="inline-flex items-center mr-4 mb-2" key={tag}>
-                                <input type="checkbox" className="form-checkbox h-5 w-5 text-indigo-600" value={tag} onChange={handleTagsChange} />
-                                <span className="ml-2 font-semibold">{tag}</span>
-                            </label>
+                        {TAGS.map((tag, key) => (
+                            <Tags tag={tag} key={key} handleTagsChange={handleTagsChange}/>
                         ))}
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
                         {getProjects().map(({ node }) => (
-                            <ProjectGrid node={node} key={node.id}/>
+                            <ProjectGrid node={node} key={node.id} />
                         ))}
                     </div>
                 </div>
