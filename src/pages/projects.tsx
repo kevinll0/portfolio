@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layouts';
-import { HeadFC, graphql, useStaticQuery } from 'gatsby';
+import { HeadFC, graphql, navigate, useStaticQuery } from 'gatsby';
 import { GatsbyImage, ImageDataLike, getImage } from 'gatsby-plugin-image';
 import IProjects from '../interfaces/IProjects';
 
@@ -32,7 +32,7 @@ function Projects() {
                     <h2 className="text-3xl font-bold mb-8">Projects</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {data.allProjectsJson.edges.map(({ node }) => (
-                            <div className="bg-slate-200 dark:bg-slate-800 rounded" key={node.id}>
+                            <div className="bg-slate-200 dark:bg-slate-800 rounded cursor-pointer" key={node.id} onClick={() => navigate('/projects/' + node.slug)}>
                                 <GatsbyImage image={getImage(node.image as ImageDataLike)!} alt={node.title} loading='lazy' />
                                 <h3 className=" px-4 text-lg font-medium mb-2">{node.title}</h3>
                                 <div className="flex flex-wrap px-4">

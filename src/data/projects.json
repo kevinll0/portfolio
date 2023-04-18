@@ -9,7 +9,8 @@
         "image": "../images/week-0.png",
         "description": "This project is just a basic HTML and CSS layout that I made based on a given image. It's made using Grid and Flexbox",
         "slug": "fast-food",
-        "deployedWeb": "https://ezfood-week0.vercel.app/"
+        "deployedWeb": "https://ezfood-week0.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/ezfood-week01"
     },
     {
         "id": 2,
@@ -22,7 +23,8 @@
         "image": "../images/week-1.png",
         "description": "This project is just a basic HTML and CSS that validates all its inputs fields when submitting the form so that the user can only put valid information to send some data to a server",
         "slug": "basic-form-with-validation",
-        "deployedWeb": "https://challenge-week-01.vercel.app/"
+        "deployedWeb": "https://challenge-week-01.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-01"
     },
     {
         "id": 3,
@@ -35,7 +37,8 @@
         "image": "../images/week-2.png",
         "description": "This project is consuming an API to get news. The user can search by text, the language and the page size. Whenever the user searchs for something, the last search is stored in the local storage so that way when the user comes back, he can see what his last search was.",
         "slug": "news-app",
-        "deployedWeb": "https://challenge-week-02.vercel.app/"
+        "deployedWeb": "https://challenge-week-02.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-02"
     },
     {
         "id": 4,
@@ -48,7 +51,8 @@
         "image": "../images/week-3.png",
         "description": "A video game store that lets the user filter and search by games and also the user is able to add, and edit a new game. Every game have a detail page where the user can leave a comment.",
         "slug": "game-store-vanilla",
-        "deployedWeb": "https://challenge-week-03.vercel.app/"
+        "deployedWeb": "https://challenge-week-03.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-03"
     },
     {
         "id": 5,
@@ -62,7 +66,8 @@
         "image": "../images/week-4.png",
         "description": "A video game store that lets the user filter and search by games and also the user is able to add, and edit a new game. Every game have a detail page where the user can leave a comment. The project implements a login page to get access to the main page",
         "slug": "game-store-week-4",
-        "deployedWeb": "https://challenge-week-04.vercel.app/"
+        "deployedWeb": "https://challenge-week-04.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-04"
     },
     {
         "id": 6,
@@ -76,7 +81,8 @@
         "image": "../images/week-5-6.png",
         "description": "A video game store that lets the user filter and search by games and also the user is able to add, and edit a new game. Every game have a detail page where the user can leave a comment. This project consumes an API that retrieves real games",
         "slug": "game-store-week-5",
-        "deployedWeb": "https://challenge-week-05.vercel.app/"
+        "deployedWeb": "https://challenge-week-05.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-05"
     },
     {
         "id": 7,
@@ -91,7 +97,8 @@
         "image": "../images/week-5-6.png",
         "description": "A video game store that lets the user filter and search by games and also the user is able to add, and edit a new game. Every game have a detail page where the user can leave a comment. This project uses React + TS",
         "slug": "game-store-week-6",
-        "deployedWeb": "https://challenge-week-06.vercel.app/"
+        "deployedWeb": "https://challenge-week-06.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-06"
     },
     {
         "id": 8,
@@ -106,7 +113,8 @@
         "image": "../images/week-7.png",
         "description": "This project has two parts, the first one shows a grid of colors that the user can click on and review his last moves with a previous or next buttons. Basically it takes the user to the past and the present. The second part shows a Tic Tac Toe that lets the user play and see his movements as well, in this part the user can replay the whole game",
         "slug": "time-machine",
-        "deployedWeb": "https://challenge-week-07.vercel.app/"
+        "deployedWeb": "https://challenge-week-07.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-07"
     },
     {
         "id": 9,
@@ -122,7 +130,8 @@
         "image": "../images/week-8.png",
         "description": "This project consumes a Marvel API. The user is able to see characters, comics, sections and filter by text, title, comic, character or story depending on which page he currently is. Moreover, it has a feature of adding an item to a bookmark page and that is stored in the local storage so that the user can come back and see his favorites items ",
         "slug": "marvel-app",
-        "deployedWeb": "https://challenge-week-09.vercel.app/"
+        "deployedWeb": "https://challenge-week-09.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-09"
     },
     {
         "id": 10,
@@ -138,6 +147,7 @@
         "image": "../images/week-9.png",
         "description": "This is a portfolio project that tells a little bit about the story of I became a developer, my experience throughout all this years and the projects I have made during the training program at Applaudo Studios ",
         "slug": "portfolio-dev",
-        "deployedWeb": "https://challenge-week-10.vercel.app/"
+        "deployedWeb": "https://challenge-week-10.vercel.app/",
+        "linkRepo": "https://gitlab.com/kevinllo/challenge-week-10"
     }
 ]

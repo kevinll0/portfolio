@@ -7,6 +7,7 @@ interface IProjectNode {
     slug: string;
     description: string;
     deployedWeb: string;
+    linkRepo: string;
     image: IProjectImage | null;
 }
 
